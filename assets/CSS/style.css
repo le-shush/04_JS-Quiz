@@ -1,3 +1,4 @@
+/* Define color variables*/
 :root {
     --dark: rgb(58,47,48);
     --light: rgb(235,233,219);
@@ -6,10 +7,14 @@
     --highlight: rgb(226,156,43);
 }
 
-head {
+* {
+    font-family: "articulat-cf", sans-serif;
+}
+
+header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-content: left;
 }
 
 body {
@@ -22,6 +27,27 @@ body {
     color: var(--light);
 }
 
+h1 {
+    display: flex;
+    text-align: center;
+
+    font-weight: 800;
+    font-style: normal;
+    font-size: 9vw;
+
+    color: var(--main);
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+}
+
+a {
+    justify-items: left;
+}
+
 /* Hides the result container and the name submision form*/
 #result-container {
     display: none;
@@ -29,4 +55,42 @@ body {
  
 #quiz-container {
     display: none;
+    flex-direction: column;
+    align-content: center;
+    padding: 12%;
+    padding-top: 30%;
 }
+
+#timer {
+    display: none;
+    padding: 12%;
+}
+
+button {
+    padding: 2%;
+}
+
+button:hover {
+    background-color: var(--highlight);
+    color: var(--light);
+
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 12vw;
+    }
+  }
+
+@media screen and (max-width: 425px) {
+   h1 {
+    font-size: 21vw;
+   }
+  }

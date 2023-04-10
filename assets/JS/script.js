@@ -31,6 +31,7 @@ const quizQuestions = [
  const submitBtn = document.querySelector("#submit-btn");
  const scoreEl = document.querySelector("#score");
  const timerEl = document.querySelector("#time");
+ const timerTxt = document.querySelector("#timer");
  const highScoresLink = document.querySelector("#high-scores");
  
  let currentQuestionIndex = 0;
@@ -53,6 +54,8 @@ const quizQuestions = [
     startBtn.style.display = "none";
     // Display quiz container
     quizContainer.style.display = "flex";
+    //Display Timer
+    timerTxt.style.display = "flex";
     // Shuffle options for current question
     shuffleArray(quizQuestions[currentQuestionIndex].options);
     // Display current question and options
