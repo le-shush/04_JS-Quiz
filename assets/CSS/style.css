@@ -1,0 +1,32 @@
+:root {
+    --dark: rgb(58,47,48);
+    --light: rgb(235,233,219);
+    --main: rgb(158,39,18);
+    --med-light: rgb(169,161,144);
+    --highlight: rgb(226,156,43);
+}
+
+head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* Hides the result container and the name submision form*/
+#result-container {
+    display: none;
+ }
+ 
+#quiz-container {
+    display: none;
+}

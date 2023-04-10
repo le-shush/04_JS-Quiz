@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>JS Quiz - LeShush</title>
+  </head>
+
+  <body>
+    <header>
+       <h1>JS Quiz</h1>
+       <a href="./assets/" id="high-scores">Highscores</a>
+    </header>
+    <div id="quiz-container">
+       <h2 id="question"></h2>
+       <div id="options"></div>
+       <button id="next-btn">Next</button>
+    </div>
+    <div id="result-container">
+       <h2>Quiz Result</h2>
+       <form>
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" name="name" required>
+          <button id="submit-btn">Submit</button>
+       </form>
+       <p id="score"></p>
+    </div>
+    <div id="timer">Time Remaining: <span id="time"></span></div>
+    <button id="start-btn">Start Quiz</button>
+    <script src="./assets/JS/script.js"></script>
+ </body>
+</html>
