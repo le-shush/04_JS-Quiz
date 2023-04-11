@@ -1,19 +1,19 @@
 // Define quiz questions and answers
 const quizQuestions = [
     {
-       question: "What is the capital of France?",
-       options: ["London", "Paris", "Berlin", "Madrid"],
-       answer: "Paris"
+       question: "What would you use to select a DOM element with the id of 'main'?",
+       options: ["document.querySelector('.main')", "document.querySelect('#main')", "document.querySelector('#main')", "document.querySelector('$main')"],
+       answer: "document.querySelector('#main')"
     },
     {
-       question: "What is the tallest mammal in the world?",
-       options: ["Elephant", "Giraffe", "Hippopotamus", "Kangaroo"],
-       answer: "Giraffe"
+       question: "How do you add an event listener to a variable with a DOM element selected?",
+       options: ["var.addEventListener(event, function);", "var.EventListener(event, function);", "addEventListener.var(event, function);", "event.addEventListener(var, function);"],
+       answer: "var.addEventListener(event, function);"
     },
     {
-       question: "What is the largest planet in our solar system?",
-       options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
-       answer: "Jupiter"
+       question: "Which fucntion would you use to set a timer?",
+       options: ["interval()", "intervalSet()", "setInterval()", "set.Interval()"],
+       answer: "setInterval()"
     }
  ];
  
@@ -34,6 +34,7 @@ const quizQuestions = [
  const timerEl = document.querySelector("#time");
  const timerTxt = document.querySelector("#timer");
  const highScoresLink = document.querySelector("#high-scores");
+
  
  let currentQuestionIndex = 0;
  let score = 0;
@@ -160,7 +161,7 @@ function displayNextQuestion() {
     localStorage.setItem("highScores", JSON.stringify(highScores));
     window.location.href = "highscores.html";
  }
- 
+
  // Event listeners
  startBtn.addEventListener("click", startQuiz);
  nextBtn.addEventListener("click", displayNextQuestion);

@@ -44,6 +44,16 @@ h2 {
     font-size: 3vw;
 }
 
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+}
+
 a {
     justify-items: left;
 }
@@ -71,6 +81,14 @@ a {
 
 #timer {
     display: none;
+    padding: 6%;
+}
+
+#high-scores-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
     padding: 6%;
 }
 
