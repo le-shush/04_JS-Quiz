@@ -21,6 +21,7 @@ const quizQuestions = [
  const quizTimer = 60;
  
  // Define DOM elements
+ const startContainer = document.querySelector(".start");
  const startBtn = document.querySelector("#start-btn");
  const quizContainer = document.querySelector("#quiz-container");
  const questionEl = document.querySelector("#question");
@@ -55,13 +56,16 @@ const quizQuestions = [
     // Display quiz container
     quizContainer.style.display = "flex";
     //Display Timer
-    timerTxt.style.display = "flex";
+    timerTxt.style.display = "flex"; 
     // Shuffle options for current question
     shuffleArray(quizQuestions[currentQuestionIndex].options);
     // Display current question and options
     displayQuestion();
     // Start quiz timer
     startTimer();
+    // Hide start contaniner
+    startContainer.style.display = "none"; 
+    
     console.log("Start Quiz enabled" + event);
  }
  
